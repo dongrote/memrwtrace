@@ -7,7 +7,7 @@ Here's the basic gist:
    gdbgenscript.py Python script, direct _that_ output into a file like script.gdb
  - Run the analyzed ELF file in gdb, passing in the generated gdb script
 
- - ./memrwtrace $elffile | ./gdbgenscript.py > script.gdb && gdb -x script.gdb $elffile
+ - ./memrwtrace $elffile 2>/dev/null | ./gdbgenscript.py > script.gdb && gdb -x script.gdb $elffile
 
  - The resulting file (memrwtrace.out) will have all of the memory addresses that are
    either read or written
