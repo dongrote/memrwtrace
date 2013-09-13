@@ -8,10 +8,6 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
-#include <sys/user.h>
-#include <sys/ptrace.h>
-#include <sys/wait.h>
-#include <signal.h>
 
 typedef void (*callback_function_t)(uint32_t , uint32_t);
 
